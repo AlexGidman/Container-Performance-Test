@@ -1,0 +1,10 @@
+services:
+
+  performance-test:
+    image: performance-test
+    build:
+      context: .
+      target: performance-test
+    ports:
+      - "5000:5000"
+    restart: always
