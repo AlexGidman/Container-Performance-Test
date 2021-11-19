@@ -18,6 +18,6 @@ RUN pip --no-cache-dir install -r requirements.txt
 ## APP ##
 FROM baseimage as performance-test
 
-EXPOSE 8080
+EXPOSE 5000
 
 ENTRYPOINT ["flask", "run"]
